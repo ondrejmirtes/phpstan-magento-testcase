@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b5f89a0cd4e0440205b3be3120f37e9",
+    "content-hash": "003fc41e34d6cd67490290056f5ceb6b",
     "packages": [
         {
             "name": "brick/math",
@@ -5584,25 +5584,25 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.0.1",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c"
+                "reference": "07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
-                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918",
+                "reference": "07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.2"
+                "php": ">=8.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.0-dev"
+                    "dev-main": "3.1-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -5631,7 +5631,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.1"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.1.0"
             },
             "funding": [
                 {
@@ -5647,7 +5647,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:55:41+00:00"
+            "time": "2022-02-25T11:15:52+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -5714,20 +5714,23 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v6.0.8",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "af7edab28d17caecd1f40a9219fc646ae751c21f"
+                "reference": "45b8beb69d6eb3b05a65689ebfd4222326773f8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/af7edab28d17caecd1f40a9219fc646ae751c21f",
-                "reference": "af7edab28d17caecd1f40a9219fc646ae751c21f",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/45b8beb69d6eb3b05a65689ebfd4222326773f8f",
+                "reference": "45b8beb69d6eb3b05a65689ebfd4222326773f8f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.2"
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "symfony/filesystem": "^6.0"
             },
             "type": "library",
             "autoload": {
@@ -5755,7 +5758,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v6.0.8"
+                "source": "https://github.com/symfony/finder/tree/v6.1.0"
             },
             "funding": [
                 {
@@ -5771,7 +5774,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-15T08:07:58+00:00"
+            "time": "2022-04-15T08:08:08+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -6824,17 +6827,23 @@
     "packages-dev": [
         {
             "name": "bitexpert/phpstan-magento",
-            "version": "dev-feature/phpstan_1.7",
+            "version": "v0.23.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/shochdoerfer/phpstan-magento/",
-                "reference": "906f5a2ea3253d37eb29aae830ea6d77eb8f3fd4"
+                "url": "https://github.com/bitExpert/phpstan-magento.git",
+                "reference": "91032ba3777bf22df981c959d70f0fdbc391e515"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bitExpert/phpstan-magento/zipball/91032ba3777bf22df981c959d70f0fdbc391e515",
+                "reference": "91032ba3777bf22df981c959d70f0fdbc391e515",
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "laminas/laminas-code": "~3.3.0 || ~3.4.1 || ~3.5.1 || ~4.5.0",
                 "php": "^7.2.0 || ^8.1.0",
-                "phpstan/phpstan": "~1.7.0",
+                "phpstan/phpstan": "~1.7.2",
                 "symfony/finder": "^3.0 || ^4.0 || ^5.0 || ^6.0"
             },
             "conflict": {
@@ -6868,35 +6877,7 @@
                     "bitExpert\\PHPStan\\": "src/bitExpert/PHPStan"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "bitExpert\\PHPStan\\": "tests/bitExpert/PHPStan"
-                }
-            },
-            "scripts": {
-                "check": [
-                    "@cs-check",
-                    "@test"
-                ],
-                "cs-check": [
-                    "vendor/bin/phpcs --standard=PSR2 ./src ./tests --ignore=src/Magento/*"
-                ],
-                "cs-fix": [
-                    "vendor/bin/phpcbf"
-                ],
-                "check-license": [
-                    "vendor/bin/license-checker check"
-                ],
-                "analyze": [
-                    "vendor/bin/phpstan analyze"
-                ],
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "coverage": [
-                    "vendor/bin/phpunit --coverage-clover clover.xml"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6908,7 +6889,11 @@
                 }
             ],
             "description": "PHPStan Magento Extension",
-            "time": "2022-05-23T16:51:25+00:00"
+            "support": {
+                "issues": "https://github.com/bitExpert/phpstan-magento/issues",
+                "source": "https://github.com/bitExpert/phpstan-magento/tree/v0.23.0"
+            },
+            "time": "2022-05-27T09:01:09+00:00"
         },
         {
             "name": "phpstan/extension-installer",
@@ -6957,16 +6942,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.7.0",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "509b3d6da631de31494dc21adedb30d73970e5aa"
+                "reference": "c602f80d66ba425943b0f4aaa27010c822dd8f87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/509b3d6da631de31494dc21adedb30d73970e5aa",
-                "reference": "509b3d6da631de31494dc21adedb30d73970e5aa",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c602f80d66ba425943b0f4aaa27010c822dd8f87",
+                "reference": "c602f80d66ba425943b0f4aaa27010c822dd8f87",
                 "shasum": ""
             },
             "require": {
@@ -6992,7 +6977,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.7.0"
+                "source": "https://github.com/phpstan/phpstan/tree/1.7.2"
             },
             "funding": [
                 {
@@ -7012,14 +6997,12 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-23T15:11:29+00:00"
+            "time": "2022-05-26T12:59:20+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "bitexpert/phpstan-magento": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
